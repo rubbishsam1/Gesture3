@@ -59,7 +59,7 @@ class MainActivity : AppCompatActivity() ,OnGestureListener,OnTouchListener
             .circleCrop()
             .into(img3)
         mper = MediaPlayer()
-        mper = MediaPlayer.create(this, R.raw.scenario)
+        mper = MediaPlayer.create(this, R.raw.music)
         mper.start()
 
     }
@@ -108,18 +108,19 @@ class MainActivity : AppCompatActivity() ,OnGestureListener,OnTouchListener
         //txv.text = "快滑"
         if (e1.x <= e2.x){
             txv.text = "往右快滑"
-            count++
-            if(count>5){
-                count=0
+            count--
+            if(count<0){
+                count=5
             }
 
         }
         else{
             txv.text = "往左快滑"
-            count--
-            if(count<0){
-                count=5
+            count++
+            if(count>5){
+                count=0
             }
+
 
         }
         txv.text = count.toString()

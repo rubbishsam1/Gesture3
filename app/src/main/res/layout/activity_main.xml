@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
+
     android:background="@drawable/pu0"
     android:id="@+id/bg">
 
@@ -14,7 +15,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="手勢辨別"
-        android:textSize="36sp" />
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/txv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="自我介紹"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="50sp" />
 
     <ImageView
         android:id="@+id/img1"
