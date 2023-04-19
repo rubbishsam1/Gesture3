@@ -109,16 +109,16 @@ class MainActivity : AppCompatActivity() ,OnGestureListener,OnTouchListener
         if (e1.x <= e2.x){
             txv.text = "往右快滑"
             count--
-            if(count<0){
-                count=5
+            if(count<1){
+                count=3
             }
 
         }
         else{
             txv.text = "往左快滑"
             count++
-            if(count>5){
-                count=0
+            if(count>3){
+                count=1
             }
 
 

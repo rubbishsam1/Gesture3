@@ -7,7 +7,7 @@
     tools:context=".MainActivity"
     android:orientation="vertical"
 
-    android:background="@drawable/pu0"
+    android:background="@drawable/pu1"
     android:id="@+id/bg">
 
     <TextView
@@ -17,26 +17,18 @@
         android:text="手勢辨別"
         android:textSize="30sp" />
 
-    <TextView
-        android:id="@+id/txv2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="自我介紹"
-        android:gravity="center"
-        android:textColor="@color/black"
-        android:textSize="50sp" />
 
     <ImageView
         android:id="@+id/img1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ghost1" />
+        app:srcCompat="@drawable/dog1" />
 
     <ImageView
         android:id="@+id/img2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ghost2" />
+        app:srcCompat="@drawable/dog2" />
 
     <ImageView
         android:id="@+id/img3"
